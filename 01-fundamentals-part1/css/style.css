@@ -1,0 +1,33 @@
+/*Variables*/
+:root{
+    --white: #ffffff;
+    --principalFont : 'Open Sans', sans-serif;
+}
+
+/*Global config*/
+html{
+    font-size: 62.5%;
+    /*The upper lines are vital, it allows that 1 rem = 10px*/
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background: rgb(6,189,173);
+    background: linear-gradient(90deg, rgba(6,189,173,0.44981320164784666) 0%, rgba(6,190,167,1) 0%, rgba(14,207,67,1) 100%, rgba(19,217,10,0.0856675433845413) 100%); 
+    display: grid;
+    place-items: center;
+    
+}
+
+h1{
+    
+    color: var(--white);
+    font-family: var(--principalFont);
+    font-size: 10rem;
+   
+   
+}
