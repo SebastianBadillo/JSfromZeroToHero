@@ -1,0 +1,4 @@
+1. Make sure you 100% understand the problem. Ask the right question to get a clear picture of the problem (Make the right Answers).
+2. Divide and conquer:Break a big problem into smaller sub-problems.
+3. Research as much as you need
+4. For bigger problems, write pseduo-code before writing actual code
