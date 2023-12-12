@@ -1,0 +1,118 @@
+/* Root config*/
+:root {
+  background-color: #000000e0;
+  color: #ffffff;
+  --principalFont: "Press Start 2P";
+}
+/*------------------------Basic config*/
+html {
+  font-size: 62.5%;
+  /*The upper lines are vital, it allows that 1 rem = 10px*/
+  box-sizing: border-box;
+  scroll-snap-type: y mandatory;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* ----------------------General config*/
+html {
+  font-family: var(--principalFont);
+}
+.upperContent {
+  display: flex;
+  justify-content: space-between;
+}
+.upperContent div {
+  margin: 1rem;
+}
+.button {
+  background-color: #fffff9ea;
+  color: #000000;
+  font-weight: 400;
+  width: 20rem;
+  font-size: 2rem;
+  padding: 1.5rem 3rem 1.5rem 3rem;
+  font-family: var(--principalFont);
+  cursor: pointer;
+  border: none;
+}
+.button:hover {
+  background-color: #ffffffb9;
+}
+h1 {
+  text-align: center;
+  font-size: 4.5rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.interrogant {
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  font-size: 4rem;
+  background-color: #ffffff;
+  color: #000000;
+}
+.scores {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 1rem;
+  margin-top: 10rem;
+}
+@media (min-width: 768px) {
+  .scores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    margin-top: 10rem;
+  }
+}
+
+.scores div {
+  margin: 1rem;
+}
+.message {
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+.column2 {
+  text-align: center;
+}
+input {
+  background-color: #000000;
+  width: 20rem;
+  margin-bottom: 3rem;
+  margin-top: 0rem;
+  height: 5rem;
+  color: #ffffff;
+  text-align: center;
+  font-family: var(--principalFont);
+  font-size: 2.5rem;
+  border: solid;
+}
+@media (max-width: 490px) {
+  input {
+    width: 70%;
+  }
+  .scores {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-gap: 1rem;
+    margin-top: 10rem;
+  }
+}
